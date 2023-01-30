@@ -31,7 +31,7 @@ export default {
       if (!this.isUserValid) return;
       localStorage.userCred = JSON.stringify(this.userCred);
       await this.$store.dispatch({ type: 'auth/login', cred: this.userCred });
-      this.$router.push('/');
+      this.$router.push({ name: 'EdMapPage' });
     }
   },
   components: {

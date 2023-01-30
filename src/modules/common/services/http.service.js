@@ -3,7 +3,7 @@ import utils from './util.service';
 import axios from 'axios';
 axios.default.withCredentials = true;
 
-const BASE_URL = process.env.NODE_END === 'production'
+const BASE_URL = process.env.NODE_ENV === 'production'
   ? 'api/'
   : 'http://localhost:3000/api/';
 

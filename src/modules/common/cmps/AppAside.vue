@@ -1,10 +1,8 @@
 <template>
   <aside class="app-aside flex column">
-    <router-link class="logo" :to="{name: 'HomePage'}">P.S</router-link>
+    <router-link class="logo" :to="{name: 'HomePage'}">E.D</router-link>
     <nav class="flex column">
       <router-link :to="{name: 'AboutPage'}">!</router-link>
-      <router-link :to="{name: 'SettingsPage'}">S</router-link>
-      <router-link :to="{name: 'ExamplePage'}">E</router-link>
     </nav>
   </aside>
 </template>

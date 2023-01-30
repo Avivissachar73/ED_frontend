@@ -61,7 +61,11 @@ export default {
       this.isDarkMode = val;
     });
 
-    if (['HomePage'].includes(this.$route.name) && this.loggedUser && localStorage.logged_organization_id) this.$router.push({ name: 'OrganizationDetails', params: {id: localStorage.logged_organization_id} })
+
+    if (['HomePage'].includes(this.$route.name)) {
+      if (this.loggedUser) this.$router.push({ name: 'EdMapPage' });
+      else this.$router.push({ name: 'LoginPage' });
+    }
   }
 }
 </script>

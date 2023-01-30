@@ -2,7 +2,7 @@ import { io } from 'socket.io-client';
 import { httpService } from './http.service';
 
 // const BASE_URL = httpService.url;
-const BASE_URL = process.env.NODE_END === 'production'
+const BASE_URL = process.env.NODE_ENV === 'production'
   ? '/'
   : '//localhost:3000';
 var socket = null;
