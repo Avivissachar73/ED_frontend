@@ -49,7 +49,7 @@ export default {
   },
   async created() {
     this.isLoading = true;
-    await socketService.connect();
+    // await socketService.connect();
     try {
       await Promise.all([
         this.$store.dispatch('settings/loadSettings'),

@@ -3,6 +3,7 @@
     <router-link class="logo" :to="{name: 'HomePage'}">E.D</router-link>
     <nav class="flex column">
       <router-link :to="{name: 'AboutPage'}">!</router-link>
+      <router-link :to="{name: 'SettingsPage'}">S</router-link>
     </nav>
   </aside>
 </template>

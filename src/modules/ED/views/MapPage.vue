@@ -67,7 +67,9 @@ export default {
     }
   },
   methods: {
-    connectEvents() {
+    async connectEvents() {
+      await socketService.connect();
+
       socketService.on('map_room_data', data => {
         this.chatData = data;
 
